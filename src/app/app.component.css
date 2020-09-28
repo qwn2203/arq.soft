@@ -1,45 +1,16 @@
 /* Application-wide Styles */
-sidebar-wrapper {
-    min-height: 100vh;
-    margin-left: -15rem;
-    -webkit-transition: margin .25s ease-out;
-    -moz-transition: margin .25s ease-out;
-    -o-transition: margin .25s ease-out;
-    transition: margin .25s ease-out;
-    height: calc(100vh - 75px);
-}
-sidebar-wrapper .sidebar-heading {
-    padding: 0.875rem 1.25rem;
-    font-size: 1.2rem;
-}
-sidebar-wrapper .list-group {
-    width: 15rem;
-    
-}
-.sidebar .nav {
-    margin-top: 20px;
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-weight: 500;
-    font-size: 12px;
-    text-transform: uppercase;
-    border-radius: 3px;
-    color: #fff;
-    margin: 0 15px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 16px 40px;
+    margin: 0;
+    color: white;
+    text-align: center;
 }
-
-div .col-sm, .list-group-item, .sidebar-heading{
-    background-color: #2D62ED;
+.mdl-layout--fixed-drawer  .mdl-layout__drawer {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    background-color: #3f51b5;
 }
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    width: 260px;
-    background: #fff;
-    -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
