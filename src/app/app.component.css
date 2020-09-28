@@ -6,6 +6,7 @@ sidebar-wrapper {
     -moz-transition: margin .25s ease-out;
     -o-transition: margin .25s ease-out;
     transition: margin .25s ease-out;
+    height: calc(100vh - 75px);
 }
 sidebar-wrapper .sidebar-heading {
     padding: 0.875rem 1.25rem;
@@ -15,7 +16,30 @@ sidebar-wrapper .list-group {
     width: 15rem;
     
 }
+.sidebar .nav {
+    margin-top: 20px;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0 15px;
+}
 
 div .col-sm, .list-group-item, .sidebar-heading{
     background-color: #2D62ED;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 260px;
+    background: #fff;
+    -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
