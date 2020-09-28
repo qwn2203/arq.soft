@@ -1,0 +1,22 @@
+
+<div class="row">
+  <div class="col-sm">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <div class="sidebar-heading border-bottom"><h1>MENU</h1></div>
+      <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action " routerLink="/home" routerLinkActive="active"><i class="material-icons">home</i>Home</a>
+        <a class="list-group-item list-group-item-action " routerLink="/login" routerLinkActive="active"><i class="material-icons">login</i>Login</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+  </div>
+  <div class="col-10">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+<!-- The routed views render in the <router-outlet>-->
+ 
