@@ -1,7 +1,7 @@
 <!-- The drawer is always open in large screens. The header is always shown,
   even in small screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header" style="width: auto;">
+  <header class="mdl-layout__header" style="background-color: #2d63edc9;">
     <div class="mdl-layout__header-row">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-center">
         <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
@@ -27,7 +27,7 @@
       
     </div>
     </header>
-    <div class="mdl-layout__drawer">
+    <div class="mdl-layout__drawer" style="width: auto;">
     <span class="mdl-layout-title"> ... </span>
     <nav class="mdl-navigation" routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} mdl-navigation__link">
       <a class="mdl-navigation__link" [routerLink]="[menuItem.path]" routerLinkActive="active">
@@ -36,7 +36,7 @@
       </a>
     </nav>
     </div>
-  <main class="mdl-layout__content">
+  <main class="mdl-layout__content" style="width: auto;">
     <div class="page-content"><router-outlet></router-outlet></div>
   </main>
 </div>
