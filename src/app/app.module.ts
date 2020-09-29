@@ -4,17 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { InstructionsComponent } from './instructions/instructions.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/home/home.component';
+import { InstructionsComponent } from './components/instructions/instructions.component';
+import { LoginComponent } from './components/login/login.component';
 
-
-const appRoutes: Routes = [
-      {path: 'home', component: HomeComponent},
-      {path: 'login', component: LoginComponent},
-      {path: 'instruction', component: InstructionsComponent},
-      { path: '',   redirectTo: '/home', pathMatch: 'full' },
-]
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +19,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     NgbModule,
-    RouterModule.forRoot(appRoutes),
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
