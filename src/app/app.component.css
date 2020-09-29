@@ -12,5 +12,14 @@
 .mdl-layout--fixed-drawer  .mdl-layout__drawer {
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    background-color: #3f51b5;
+    background-color: #4374EF;
+}
+
+.mdl-layout--fixed-drawer > .mdl-layout__content {
+    margin-left: 80px;
+}
+
+.mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header {
+    margin-left: 50px;
+    width: calc(100% - 24px);
 }
