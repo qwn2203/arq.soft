@@ -12,6 +12,7 @@ import { InstructionsComponent } from './instructions/instructions.component';
 const appRoutes: Routes = [
       {path: 'home', component: HomeComponent},
       {path: 'login', component: LoginComponent},
+      {path: 'instruction', component: InstructionsComponent},
       { path: '',   redirectTo: '/home', pathMatch: 'full' },
 ]
 @NgModule({
