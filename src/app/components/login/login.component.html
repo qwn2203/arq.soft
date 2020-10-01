@@ -1,5 +1,5 @@
-<section>
-    <div class="container hide-on-med-and-down">
+<section class="principal">
+    <!-- <div class="container hide-on-med-and-down">
         <div class="row ">
             <div class="col s8  model">
                 <h1 class="p5">Bienvenidos</h1>
@@ -44,5 +44,45 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="row login">
+        <div class="col s12 l4 offset-l4">
+            <div class="card">
+                <div class="card-action blue darken-4 white-text">
+                    <h3>
+                        Login Form
+                    </h3>
+                </div>
+                <div class="card-content">
+                    <div class="form-field">
+                        <label for="username">Username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="form-field">
+
+                        <label for="remember">
+                            <input type="checkbox" id="remember" />
+                            <span>Recordarme</span>
+                        </label>
+                    </div>
+                    <div class="form-field center-align">
+                        <button class="btn-large pink accent-3" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+                            Login
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#">Registrate aquí</a>
+                </div>
+            </div>
+        </div>
+        
     </div>
+
 </section>
