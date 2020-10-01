@@ -1,1 +1,88 @@
-<p>login works!</p>
+<section class="principal">
+    <!-- <div class="container hide-on-med-and-down">
+        <div class="row ">
+            <div class="col s8  model">
+                <h1 class="p5">Bienvenidos</h1>
+                <div class="p">
+                    <label>No tienes cuenta?</label>
+                    <label class="red-text text-darken-2"> Crea una aquí!</label>
+                </div>
+            </div>
+            <div class="col s4 center model2 ">
+                <div class="preuba">
+                    <h1> LOG IN</h1>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <a class="waves-effect waves-light btn red white-text" [routerLink]="['/home']" routerLinkActive="active" >Log In</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="mt">
+                    <span class="helper-text center">You agree to accept our Privacy Policy & Term of Service</span>
+                </div>
+                <div class="divider mt-65"></div>
+                <div class="row">
+                    <div class="col s6">
+                        <span class="helper-text center">Copyright <i class="fa fa-copyright" aria-hidden="true"></i>
+                            2020</span>
+                    </div>
+                    <div class="col s6">
+                        <span class="helper-text center">Terms & Conditions | Privacy policy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row login">
+        <div class="col s12 l4 offset-l4">
+            <div class="card">
+                <div class="card-action blue darken-4 white-text center-align">
+                    <h3>
+                        Login
+                    </h3>
+                </div>
+                <div class="card-content">
+                    <div class="form-field">
+                        <label for="username">Username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="form-field">
+
+                        <label for="remember">
+                            <input type="checkbox" id="remember" />
+                            <span>Recordarme</span>
+                        </label>
+                    </div>
+                    <div class="form-field center-align">
+                        <button class="btn-large pink accent-3" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+                            Login
+                        </button>
+                    </div>
+                </div>
+
+                <div class="center-align boxi">
+                    <a href="#">Registrate aquí</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</section>

@@ -1,4 +1,4 @@
-/* Application-wide Styles */
+/* Application-wide Styles
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
     display: block;
     -webkit-flex-shrink: 0;
@@ -22,4 +22,5 @@
 .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header {
     margin-left: 50px;
     width: calc(100% - 24px);
-}
+} */
+
