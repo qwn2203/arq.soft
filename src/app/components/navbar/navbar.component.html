@@ -9,7 +9,7 @@
     </div>
 </nav> -->
 
-<header>
+<!-- <header>
 	<nav>
 		<div class="nav-wrapper">
 			<div class="row">
@@ -20,15 +20,25 @@
 			</div>
 		</div>
 	</nav>
-</header>
+</header> -->
 
 	
 
 
 <!-- LEFT SIDEBAR	 -->
-<ul id="sidenav-1" class="sidenav sidenav-fixed">
+<!-- <ul id="sidenav-1" class="sidenav sidenav-fixed">
 	<li><a class="subheader">Always out except on mobile</a></li>
 	<li><a href="https://github.com/dogfalo/materialize/" target="_blank">Github</a></li>
 	<li><a href="https://twitter.com/MaterializeCSS" target="_blank">Twitter</a></li>
 	<li><a href="http://next.materializecss.com/getting-started.html" target="_blank">Docs</a></li>
+</ul> -->
+
+<ul class="side-menu">
+	<li><a [routerLink]="['/home']" routerLinkActive="router-link-active" ><span class="fas fa-home"></span>Inicio</a></li>
+	<li><a [routerLink]="['/instruction']" routerLinkActive="router-link-active" ><span class="fas fa-chalkboard-teacher"></span>Instructions</a></li>
+	<li><a [routerLink]="['/login']" routerLinkActive="router-link-active" ><span class="fas fa-sign-out-alt"></span>Cerrar Sesión</a></li>
+	<!-- <li><a href="#"><span class="fa fa-caret-square-o-right"></span>Botões</a></li>
+	<li><a href="#"><span class="fa fa-check-square"></span>Formulários</a></li>
+	<li><a href="#"><span class="fa  fa-square"></span>Cards</a></li>
+	<li><a href="#"><span class="fa fa-bars"></span>Menu</a></li> -->
 </ul>

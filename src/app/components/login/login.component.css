@@ -1,46 +1,36 @@
-section {
+.principal{
   width: 100vw;
   height: 100vh;
   color: #fff;
   background: linear-gradient(-45deg, #5269ee, #e73c7e, #381768, #23d5ab);
-  background-size: 400%, 400%;
-  position: relative;
+  background-size: cove;
+  position: absolute;
 }
 
-.model {
-  /* position: absolute;
-    top: 50vh;
-    left: 8vw; */
-
-  border-radius: 29px 0px 0px 29px;
-  -moz-border-radius: 29px 0px 0px 29px;
-  -webkit-border-radius: 29px 0px 0px 29px;
-  /* border: 1px solid #000000; */
-  background: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0, 0));
+.login{
+  margin-top: 25vh;
 }
 
-.model2 {
-  /* position: absolute;
-      top: 50vh;
-      left: 8vw; */
-
-  border-radius: 0px 29px 29px 0px;
-  -moz-border-radius: 0px 29px 29px 0px;
-  -webkit-border-radius: 0px 29px 29px 0px;
-  background: rgba(37, 37, 37, 0.623);
-  padding-top: 10%;
+.login .card{
+  background: rgba(0, 0, 0, .6);
 }
 
-.p {
-  padding-top: 45%;
+.login label {
+  font-size: 16px;
+  color: #ccc;
 }
-.p5 {
-  padding-top: 50%;
+.login input{
+  font-size: 22px !important;
+  color: #ccc !important;
 }
 
-.mt {
-  margin-top: 30px;
+.login button{
+  margin-top: 3vh;
 }
-.mt-65 {
-  margin-top: 84.6%;
+
+.login button:hover{
+  padding: 0px 40px;
+  background-color: rgb(194, 35, 70) !important;
+
 }
+
