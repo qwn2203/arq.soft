@@ -33,4 +33,12 @@
   background-color: rgb(194, 35, 70) !important;
 
 }
-
+a{
+  color: gray;
+}
+a:hover{
+  color: white;
+}
+.boxi{
+  height: 50px;
+}
