@@ -28,7 +28,7 @@ section {
   -moz-border-radius: 0px 29px 29px 0px;
   -webkit-border-radius: 0px 29px 29px 0px;
   background: rgba(37, 37, 37, 0.623);
-  padding-top: 10%;
+  padding-top: 10vh;
 }
 
 .p {
@@ -39,8 +39,41 @@ section {
 }
 
 .mt {
-  margin-top: 30px;
+  margin-top: 12vh;
 }
+
+
 .mt-65 {
-  margin-top: 84.6%;
+  margin-top: 29vh;
+}
+/* para Ipad pro */
+@media (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape){
+  .mt-65 {
+    margin-top: 4.5vh;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px){
+  .mt-65 {
+    margin-top: 4.5vh;
+  }
+  .p5 {
+    padding-top: 80%;
+  }
+  .mt {
+    margin-top: 3.5vh;
+  }
+}
+
+/* ipad landscape */
+@media (min-width: 1024px) and (orientation: landscape) and (max-width: 1024px) {
+  .mt {
+    margin-top: 5vh;
+  }
+  .p5 {
+    padding-top: 70%;
+  }
+  .mt-65 {
+    margin-top: 11vh;
+  }
 }
