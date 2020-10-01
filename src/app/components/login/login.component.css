@@ -34,3 +34,12 @@
 
 }
 
+a{
+  color: gray;
+}
+a:hover{
+  color: white;
+}
+.boxi{
+  height: 50px;
+}
