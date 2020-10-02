@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
 declare const $: any;
 @Component({
   selector: 'app-navbar',
@@ -10,11 +12,11 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    $(document).ready(function(){
-      $('.sidenav').sidenav();
-      $('#sidenav-1').sidenav({ edge: 'left' });
+    // $(document).ready(function(){
+    //   $('.sidenav').sidenav();
+    //   $('#sidenav-1').sidenav({ edge: 'left' });
       
-    });
+    // });
     
   }
 
