@@ -10,6 +10,7 @@ import { InstructionsComponent } from './components/instructions/instructions.co
 import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeAppComponent } from './components/home-app/home-app.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,9 @@ import { HomeAppComponent } from './components/home-app/home-app.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule,
     AppRoutingModule,
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

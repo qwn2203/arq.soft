@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { HomeComponent } from '../home/home.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 import { HomeAppComponent } from './home-app.component';
 
@@ -8,7 +11,8 @@ describe('HomeAppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeAppComponent ]
+      imports: [RouterTestingModule],
+      declarations: [ HomeAppComponent, NavbarComponent, HomeComponent ]
     })
     .compileComponents();
   });
