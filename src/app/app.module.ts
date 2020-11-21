@@ -11,6 +11,10 @@ import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeAppComponent } from './components/home-app/home-app.component';
 import { FormsModule } from '@angular/forms';
+import { Activity1Component } from './components/activity1/activity1.component';
+import { ResultadosComponent } from './components/resultados/resultados.component';
+import { TeacherComponent } from './components/teacher/teacher.component';
+import { CalificacionesComponent } from './components/calificaciones/calificaciones.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     InstructionsComponent,
     NavbarComponent,
-    HomeAppComponent
+    HomeAppComponent,
+    Activity1Component,
+    ResultadosComponent,
+    TeacherComponent,
+    CalificacionesComponent
   ],
   imports: [
     BrowserModule,
