@@ -7,11 +7,13 @@ import { HomeComponent } from './components/home/home.component';
 import { InstructionsComponent } from './components/instructions/instructions.component';
 import { LoginComponent } from './components/login/login.component';
 import { ResultadosComponent } from './components/resultados/resultados.component';
+import { SignupComponent } from './components/signup/signup.component';
 import { TeacherComponent } from './components/teacher/teacher.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeAppComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
   { path: 'activity', component: InstructionsComponent },
   { path: 'activity/1', component: Activity1Component },
   { path: 'resultados', component: ResultadosComponent },

@@ -15,6 +15,7 @@ import { Activity1Component } from './components/activity1/activity1.component';
 import { ResultadosComponent } from './components/resultados/resultados.component';
 import { TeacherComponent } from './components/teacher/teacher.component';
 import { CalificacionesComponent } from './components/calificaciones/calificaciones.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CalificacionesComponent } from './components/calificaciones/calificacio
     Activity1Component,
     ResultadosComponent,
     TeacherComponent,
-    CalificacionesComponent
+    CalificacionesComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
