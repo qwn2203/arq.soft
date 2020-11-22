@@ -1,1 +1,62 @@
-<p>calificaciones works!</p>
+<ul class="side-menu">
+	<li><a [routerLink]="['/teacher']" routerLinkActive="router-link-active" ><span class="fas fa-home"></span>Inicio</a></li>
+	<li><a [routerLink]="['/calificaciones']" routerLinkActive="router-link-active" ><span class="fas fa-chalkboard-teacher"></span>Califiaciones</a></li>
+	<li><a [routerLink]="['/loginT']" routerLinkActive="router-link-active" ><span class="fas fa-sign-out-alt"></span>Cerrar Sesión</a></li>
+
+</ul>
+<main>
+    <div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header card-header-info">
+                            <h4 class="card-title ">Calificaciones</h4>
+                            <p class="card-category" style="color: white;">Las calificaciones de tus alumnos aparecerán aquí:</p>
+                        </div>
+                        <div class="card-body table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-info">
+                                    <th>ID Alumno</th>
+                                    <th>Nombre Alumno</th>
+                                    <th>Actividad 1</th>
+                                    <th>Actividad 2</th>
+                                    <th>Otras opciones</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1234567</td>
+                                        <td>Pedro López</td>
+                                        <td><i class="material-icons text-success">done</i></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2234567</td>
+                                        <td>Luis González</td>
+                                        <td></td>
+                                        <td><i class="material-icons text-warning">priority_high</i></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3456789</td>
+                                        <td>José Perez</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="material-icons text-danger">close</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4567891</td>
+                                        <td>Daniel Calleros</td>
+                                        <td><i class="material-icons text-success">done</i></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
