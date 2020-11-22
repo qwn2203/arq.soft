@@ -1,0 +1,92 @@
+<app-navbar></app-navbar>
+<div class="row move">
+    <form action="" class="col s8"id="reg-form" [formGroup]="forma" (ngSubmit)="guardar()">
+        <div class="row card-panel">
+            <h4 class="card-title">Actividad 1</h4>
+            <div class="input-field col s12">
+                <div class="card-panel">
+                    <h6 for="nombre">¿Cuál es el resultado de 2+2?</h6>
+                    <p>
+                        <label>
+                            <input class="with-gap validate" formControlName="q1" name="q1" type="radio" />
+                            <span>a) 4 </span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap validate" formControlName="q1" name="q1" type="radio" />
+                            <span>b) 5 </span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap validate" formControlName="q1" name="q1" type="radio" />
+                            <span>c) 2 </span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap validate" formControlName="q1" name="q1" type="radio" />
+                            <span>d) 7 </span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <div class="input-field col s12">
+                <div class="card-panel">
+                    <h6 for="nombre">¿Cuáles son los números impares?</h6>
+                    <p>
+                        <label>
+                            <input type="checkbox" formControlName="q2" name="q2" class="filled-in validate" />
+                            <span>3</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" formControlName="q2" name="q2" class="filled-in validate" />
+                            <span>2</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" formControlName="q2" name="q2" class="filled-in validate" />
+                            <span>5</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" formControlName="q2" name="q2" class="filled-in validate" />
+                            <span>6</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <div class="input-field col s12">
+                <div class="card-panel">
+                    <h6 for="nombre">Define que es un procesador de Texto</h6>
+                    <textarea id="textarea1" formControlName="q3" name="q3" class="materialize-textarea"></textarea>
+                </div>
+            </div>
+            <div class="input-field col s12">
+                <div class="card-panel">
+                    <h6 for="nombre">¿Es Otoño en la imagen?</h6>
+                    <img class="materialboxed " data-caption="A picture of a way with a group of trees in a park"
+                        width="250" src="https://lorempixel.com/800/400/nature/4">
+                    <label>
+                        <input class="with-gap validate" formControlName="q4t" name="q4t"  type="radio" />
+                        <span>True&nbsp;&nbsp;</span>
+                    </label>
+
+
+                    <label>
+                        <input class="with-gap validate" formControlName="q4f" name="q4f"  type="radio" />
+                        <span>False</span>
+                    </label>
+
+                </div>
+            </div>
+            
+            <button mat-raised-button type="submit" [routerLink]="['/resultados']" routerLinkActive="router-link-active"  class="btn btn-info pull-right">Empezar</button>
+        </div>
+    </form>
+</div>
