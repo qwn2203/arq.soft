@@ -1,1 +1,206 @@
-<p>teacher works!</p>
+<ul class="side-menu">
+	<li><a [routerLink]="['/teacher']" routerLinkActive="router-link-active" ><span class="fas fa-home"></span>Inicio</a></li>
+	<li><a [routerLink]="['/calificaciones']" routerLinkActive="router-link-active" ><span class="fas fa-chalkboard-teacher"></span>Califiaciones</a></li>
+	<li><a [routerLink]="['/loginT']" routerLinkActive="router-link-active" ><span class="fas fa-sign-out-alt"></span>Cerrar Sesión</a></li>
+</ul>
+<main>
+    <div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="card card-stats">
+						<div class="card-header card-header-danger card-header-icon">
+							<div class="card-icon">
+								<i class="material-icons">warning</i>
+							</div>
+							<h3 class="card-title ">Actividades vencidas </h3>
+							<h3 class="card-body text-center">5</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="card card-stats">
+						<div class="card-header card-header-success card-header-icon">
+							<div class="card-icon">
+								<i class="material-icons">check_circle</i>
+							</div>
+							<h3 class="card-title">Actividades Completas</h3>
+							<h3 class="card-body text-center"> 7</h3>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="card card-stats">
+						<div class="card-header card-header-warning card-header-icon">
+							<div class="card-icon">
+								<i class="material-icons">assignment</i>
+							</div>
+							<h3 class="card-title">Actividades Por Hacer</h3>
+							<h3 class="card-body text-center">14</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<div class="card">
+							<div class="card-header card-header-info">
+								<h4 class="card-title">Actividades</h4>
+								<p class="card-category">El estado de tus actividades apareceran aqui:</p>
+							</div>
+							<div class="card-body table-responsive">
+								<table class="table table-hover">
+									<thead class="text-info">
+										<th>ID</th>
+										<th>Actividad</th>
+										<th>Completado</th>
+										<th>Por hacer</th>
+										<th>Atrasado</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Actividad 1</td>
+											<td><i class="material-icons text-success">done</i></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Actividad 2</td>
+											<td></td>
+											<td><i class="material-icons text-warning">priority_high</i></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Actividad 3</td>
+											<td></td>
+											<td></td>
+											<td><i class="material-icons text-danger">close</i></td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Actividad 4</td>
+											<td><i class="material-icons text-success">done</i></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="card">
+							<div class="card-header card-header-tabs card-header-primary">
+								<div class="nav-tabs-navigation">
+									<div class="nav-tabs-wrapper">
+										<h4 class="card-title">Actividades por hacer</h4>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="tab-pane active" id="profile"> 
+									<table class="table">
+										<tbody>
+											<tr>
+												<td>
+													<div class="form-check">
+														<label class="form-check-label">
+															<input class="form-check-input" type="checkbox" value="" checked>
+															<span class="form-check-sign">
+																<span class="check"></span>
+															</span>
+														</label>
+													</div>
+												</td>
+												<td>Actividad 1</td>
+												<td>02/10/2020</td>
+												<td class="td-actions text-right">
+													<button mat-raised-button type="button" class="btn btn-primary btn-link btn-sm btn-just-icon">
+														<i class="material-icons">edit</i>
+													</button>
+													<button mat-raised-button type="button" class="btn btn-danger btn-link btn-sm btn-just-icon">
+														<i class="material-icons">close</i>
+													</button>
+												</td>
+											</tr> 
+											<tr>
+												<td>
+													<div class="form-check">
+														<label class="form-check-label">
+															<input class="form-check-input" type="checkbox" value="" checked>
+															<span class="form-check-sign">
+																<span class="check"></span>
+															</span>
+														</label>
+													</div>
+												</td>
+												<td>Actividad 1</td>
+												<td>02/10/2020</td>
+												<td class="td-actions text-right">
+													<button mat-raised-button type="button" class="btn btn-primary btn-link btn-sm btn-just-icon">
+														<i class="material-icons">edit</i>
+													</button>
+													<button mat-raised-button type="button" class="btn btn-danger btn-link btn-sm btn-just-icon">
+														<i class="material-icons">close</i>
+													</button>
+												</td>
+											</tr> 
+											<tr>
+												<td>
+													<div class="form-check">
+														<label class="form-check-label">
+															<input class="form-check-input" type="checkbox" value="" checked>
+															<span class="form-check-sign">
+																<span class="check"></span>
+															</span>
+														</label>
+													</div>
+												</td>
+												<td>Actividad 1</td>
+												<td>02/10/2020</td>
+												<td class="td-actions text-right">
+													<button mat-raised-button type="button" class="btn btn-primary btn-link btn-sm btn-just-icon">
+														<i class="material-icons">edit</i>
+													</button>
+													<button mat-raised-button type="button" class="btn btn-danger btn-link btn-sm btn-just-icon">
+														<i class="material-icons">close</i>
+													</button>
+												</td>
+											</tr> 
+											<tr>
+												<td>
+													<div class="form-check">
+														<label class="form-check-label">
+															<input class="form-check-input" type="checkbox" value="" checked>
+															<span class="form-check-sign">
+																<span class="check"></span>
+															</span>
+														</label>
+													</div>
+												</td>
+												<td>Actividad 1</td>
+												<td>02/10/2020</td>
+												<td class="td-actions text-right">
+													<button mat-raised-button type="button" class="btn btn-primary btn-link btn-sm btn-just-icon">
+														<i class="material-icons">edit</i>
+													</button>
+													<button mat-raised-button type="button" class="btn btn-danger btn-link btn-sm btn-just-icon">
+														<i class="material-icons">close</i>
+													</button>
+												</td>
+											</tr> 
+										</tbody>
+									</table>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</main>
+    
