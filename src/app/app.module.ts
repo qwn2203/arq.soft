@@ -16,6 +16,7 @@ import { ResultadosComponent } from './components/resultados/resultados.componen
 import { TeacherComponent } from './components/teacher/teacher.component';
 import { CalificacionesComponent } from './components/calificaciones/calificaciones.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { LoginTeacherComponent } from './components/login-teacher/loginT.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SignupComponent } from './components/signup/signup.component';
     ResultadosComponent,
     TeacherComponent,
     CalificacionesComponent,
+    LoginTeacherComponent,
     SignupComponent
   ],
   imports: [
