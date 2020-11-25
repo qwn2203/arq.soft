@@ -1,0 +1,43 @@
+<div class="container">
+    <h2 class="center">Registro</h2>
+    <div class="row">
+        <form class="col s12" id="reg-form" [formGroup]="forma" (ngSubmit)="guardar()">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" formControlName="name" class="validate" required>
+                    <label for="first_name">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" formControlName="lastname" class="validate" required>
+                    <label for="last_name">Apellido</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" formControlName="email" class="validate"  required>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" formControlName="password" class="validate" minlength="6" required>
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+
+                </div>
+
+                <div class="input-field col s6">
+                    <button class="btn btn-large btn-register waves-effect waves-light red" type="submit"
+                        name="action">Register
+                        <i class="material-icons right">done</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <a title="Login" [routerLink]="['']" routerLinkActive="router-link-active"
+        class="ngl btn-floating btn-large waves-effect waves-light red"><i class="material-icons">input</i></a>
+</div>
