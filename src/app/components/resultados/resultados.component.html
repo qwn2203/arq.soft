@@ -1,1 +1,44 @@
-<p>resultados works!</p>
+<app-navbar></app-navbar>
+<main>
+    <div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+						<div class="card-header card-header-primary">
+                            <h4 class="card-title ">Resultados</h4>
+                            <p class="card-category" style="color: white;">Los resultados obtenidos de cada pregunta aparecerán aquí:</p>
+                        </div>
+						<div class="card-body table-responsive">
+							<table class="table table-hover">
+								<thead class="text-primary">
+                                    <th># de pregunta</th>
+                                    <th>Resultado/th>
+								</thead>
+								<tbody>
+									<tr>
+                                        <td>1</td>
+                                        <td><i class="material-icons text-success">done</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><i class="material-icons text-danger">close</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><i class="material-icons text-success">done</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><i class="material-icons text-success">done</i></td>
+                                    </tr>
+								</tbody>
+                            </table>
+                            <button mat-raised-button type="submit" [routerLink]="['/home']" routerLinkActive="router-link-active"  class="btn pull-right">Terminar</button>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
