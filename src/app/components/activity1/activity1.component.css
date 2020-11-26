@@ -2,3 +2,25 @@
     margin-left: 35vw;
     margin-top: 5vh;
 }
+span{
+    color: black;
+}
+
+.bold{
+    font-weight: bold;
+    font-style: italic;
+    color: darkslateblue;
+}
+
+.title{
+    font-weight: bold;
+    font-style: italic;
+    text-transform: full-width;
+    text-align: center;
+    color: darkslateblue;
+}
+
+.btn-blue{
+    background-color: blue;
+    text-align: center;
+}
