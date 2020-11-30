@@ -9,6 +9,7 @@ import { DataApiService } from 'src/app/services/data-api.service';
 })
 export class HomeComponent implements OnInit {
   title = 'Home';
+  temaResult = '';
 
   constructor(private apiservice: DataApiService) { }
 
@@ -16,6 +17,7 @@ export class HomeComponent implements OnInit {
     this.getMaterias();
     this.getDominio();
     this.getTutor();
+    this.getTema();
   }
 
 
@@ -33,6 +35,13 @@ export class HomeComponent implements OnInit {
 
   getTutor(){
     this.apiservice.getAlltutor().subscribe((res:any)=> {
+      console.log(res);
+    });
+  }
+
+  getTema(){
+    this.apiservice.getAllTema().subscribe((res:any)=> {
+      //this.temaResult = res.tema[0].nombre;
       console.log(res);
     });
   }

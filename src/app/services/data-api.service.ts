@@ -38,6 +38,16 @@ export class DataApiService {
     return this.http.get(path, this.httpOptions);
   }
 
+  getAllTema() {
+    const path = `${this.apiURL}tema`;
+    return this.http.get(path, this.httpOptions);
+  }
+  
+  getAllCuestionario() {
+    const path = `${this.apiURL}tutor/5fc2b461f9d7cd63ce9a8ffe`;
+    return this.http.get(path, this.httpOptions);
+  }
+
   // login(usuario: any) {
   //   console.log('Login: ' + this.apiURL);
   //   const authData = { ...usuario };
