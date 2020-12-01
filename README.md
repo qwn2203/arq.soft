@@ -24,4 +24,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
+There is a file called data-api.service.ts in the location of src/app/services en el cual se ve el acceso al backend y se extrae en los componentes.
+
+- Los componentes que necesiten datos del back toman los datos del data-api.service.ts de su componente .ts, por ejemplo:
+el componente de activity.component.html toma los datos de su activity.component.ts y se pueden realizar operaciones con los mismos.
+
+
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
